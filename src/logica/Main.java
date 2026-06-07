@@ -1,5 +1,5 @@
-//Flor Bustos
-//Florencia Lillo
+//Flor_Bustos
+//Florencia_Lillo
 
 package logica;
 
