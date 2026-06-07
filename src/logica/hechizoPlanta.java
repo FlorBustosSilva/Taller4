@@ -8,6 +8,13 @@ public class hechizoPlanta extends Hechizo{
 		this.duracionStun = duracionStun;
 		this.cantPlantas = cantPlantas;
 	}
+	
+
+	@Override
+	public double calcularPuntuacion() {
+		return getDaño() + (duracionStun*cantPlantas);
+	}
+
 
 	public Double getDuracionStun() {
 		return duracionStun;

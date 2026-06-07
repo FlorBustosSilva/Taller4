@@ -7,6 +7,15 @@ public class hechizoFuego extends Hechizo {
 		super(nombre, tipo, daño);
 		this.duracionQuemadura = duracionQuemadura;
 	}
+	
+	
+
+	@Override
+	public double calcularPuntuacion() {
+		return getDaño() * duracionQuemadura;
+	}
+
+
 
 	public Double getDuracionQuemadura() {
 		return duracionQuemadura;

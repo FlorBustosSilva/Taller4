@@ -8,6 +8,14 @@ public class hechizoAgua extends Hechizo {
 		this.cantidadHeal = cantidadHeal;
 		this.presiondelAgua = presiondelAgua;
 	}
+	
+
+	@Override
+	public double calcularPuntuacion() {
+		
+		return (getDaño() + cantidadHeal + presiondelAgua)*2;
+	}
+
 
 	public Double getCantidadHeal() {
 		return cantidadHeal;

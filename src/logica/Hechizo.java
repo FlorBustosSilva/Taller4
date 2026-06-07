@@ -1,6 +1,6 @@
 package logica;
 
-public class Hechizo {
+public abstract class Hechizo implements Calculodedaño{
 	private String nombre,tipo;
 	private Double daño;
 	
@@ -10,6 +10,7 @@ public class Hechizo {
 		this.tipo = tipo;
 		this.daño = daño;
 	}
+	public abstract double calcularPuntuacion();
 
 	public String getNombre() {
 		return nombre;

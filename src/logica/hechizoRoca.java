@@ -7,6 +7,13 @@ public class hechizoRoca extends Hechizo{
 		super(nombre, tipo, daño);
 		this.mejoraDefensa = mejoraDefensa;
 	}
+	
+
+	@Override
+	public double calcularPuntuacion() {
+		return (getDaño() * mejoraDefensa)/2 ;
+	}
+
 
 	public Double getMejoraDefensa() {
 		return mejoraDefensa;
