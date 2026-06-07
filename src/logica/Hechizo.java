@@ -1,5 +1,40 @@
 package logica;
 
 public class Hechizo {
+	private String nombre,tipo;
+	private Double daño;
+	
+	public Hechizo(String nombre, String tipo, Double daño) {
+		super();
+		this.nombre = nombre;
+		this.tipo = tipo;
+		this.daño = daño;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public Double getDaño() {
+		return daño;
+	}
+
+	public void setDaño(Double daño) {
+		this.daño = daño;
+	}
+	
+	
 
 }
