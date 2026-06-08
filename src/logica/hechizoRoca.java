@@ -4,7 +4,7 @@ public class hechizoRoca extends Hechizo{
 	private Double mejoraDefensa;
 
 	public hechizoRoca(String nombre, String tipo, Double daño, Double mejoraDefensa) {
-		super(nombre, "roca, daño);
+		super(nombre, "Roca", daño);
 		this.mejoraDefensa = mejoraDefensa;
 	}
 	
@@ -13,6 +13,10 @@ public class hechizoRoca extends Hechizo{
 	public double calcularPuntuacion() {
 		return (getDaño() * mejoraDefensa)/2 ;
 	}
+	@Override
+    public String toTexto() {
+        return getNombre() + ";Tierra;" + getDaño() + ";" + mejoraDefensa;
+    }
 
 
 	public Double getMejoraDefensa() {

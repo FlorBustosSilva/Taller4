@@ -44,3 +44,4 @@ public class escribirArchivos {
             System.out.println("Error al guardar magos: " + e.getMessage());
         }
     }
+    }

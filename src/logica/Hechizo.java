@@ -11,6 +11,7 @@ public abstract class Hechizo implements Calculodedaño{
 		this.daño = daño;
 	}
 	public abstract double calcularPuntuacion();
+	public abstract String toTexto();
 
 	public String getNombre() {
 		return nombre;
@@ -34,6 +35,11 @@ public abstract class Hechizo implements Calculodedaño{
 
 	public void setDaño(Double daño) {
 		this.daño = daño;
+	}
+	@Override
+	public String toString() {
+		return String.format("%-25s | Tipo: %-8s | Daño: %6.1f | Puntuación: %.2f",
+                nombre, tipo, daño, calcularPuntuacion());
 	}
 	
 	

@@ -4,7 +4,7 @@ public class hechizoPlanta extends Hechizo{
 	private Double duracionStun,cantPlantas;
 
 	public hechizoPlanta(String nombre, String tipo, Double daño, Double duracionStun, Double cantPlantas) {
-		super(nombre, tipo"planta, daño);
+		super(nombre,"Planta", daño);
 		this.duracionStun = duracionStun;
 		this.cantPlantas = cantPlantas;
 	}
@@ -14,6 +14,10 @@ public class hechizoPlanta extends Hechizo{
 	public double calcularPuntuacion() {
 		return getDaño() + (duracionStun*cantPlantas);
 	}
+	@Override
+    public String toTexto() {
+        return getNombre() + ";Planta;" + getDaño() + ";" + duracionStun + "," + cantPlantas;
+    }
 
 
 	public Double getDuracionStun() {

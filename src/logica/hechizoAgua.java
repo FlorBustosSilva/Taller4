@@ -4,7 +4,7 @@ public class hechizoAgua extends Hechizo {
 	private Double cantidadHeal, presiondelAgua;
 
 	public hechizoAgua(String nombre, String tipo, Double daño, Double cantidadHeal, Double presiondelAgua) {
-		super(nombre, "agua", daño);
+		super(nombre, "Agua", daño);
 		this.cantidadHeal = cantidadHeal;
 		this.presiondelAgua = presiondelAgua;
 	}
@@ -15,6 +15,13 @@ public class hechizoAgua extends Hechizo {
 		
 		return (getDaño() + cantidadHeal + presiondelAgua)*2;
 	}
+	
+	@Override
+	public String toTexto() {
+		
+	    return getNombre() + ";Agua;" + getDaño() + ";" + cantidadHeal + "," + presiondelAgua;
+	   
+	 }
 
 
 	public Double getCantidadHeal() {
