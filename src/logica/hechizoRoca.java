@@ -4,7 +4,7 @@ public class hechizoRoca extends Hechizo{
 	private Double mejoraDefensa;
 
 	public hechizoRoca(String nombre, String tipo, Double daño, Double mejoraDefensa) {
-		super(nombre, tipo, daño);
+		super(nombre, "roca, daño);
 		this.mejoraDefensa = mejoraDefensa;
 	}
 	

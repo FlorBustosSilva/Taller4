@@ -4,7 +4,7 @@ public class hechizoPlanta extends Hechizo{
 	private Double duracionStun,cantPlantas;
 
 	public hechizoPlanta(String nombre, String tipo, Double daño, Double duracionStun, Double cantPlantas) {
-		super(nombre, tipo, daño);
+		super(nombre, tipo"planta, daño);
 		this.duracionStun = duracionStun;
 		this.cantPlantas = cantPlantas;
 	}

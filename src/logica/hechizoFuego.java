@@ -4,7 +4,7 @@ public class hechizoFuego extends Hechizo {
 	private Double duracionQuemadura;
 
 	public hechizoFuego(String nombre, String tipo, Double daño, Double duracionQuemadura) {
-		super(nombre, tipo, daño);
+		super(nombre, "fuego", daño);
 		this.duracionQuemadura = duracionQuemadura;
 	}
 	
